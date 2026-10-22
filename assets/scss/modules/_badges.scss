@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-xs $space-m;
+  border-radius: $radius-pill;
+  font-size: $font-size-body;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-small;
+ 
+  &--lake   { background-color: $color-scene-lake;   color: $color-scene-lake-text; }
+  &--forest { background-color: $color-scene-forest; color: $color-scene-forest-text; }
+  &--kiosk  { background-color: $color-scene-kiosk;  color: $color-scene-kiosk-text; }
+}

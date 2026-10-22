@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as *;
+
+:root {
+  // Couleurs
+  --color-text: #{$color-text};
+  --color-text-body: #{$color-text-body};
+  --color-text-muted: #{$color-text-muted};
+
+  --color-bg: #{$color-bg};
+  --color-bg-alt: #{$color-bg-alt};
+  --color-border: #{$color-border};
+  --color-border-field: #{$color-border-field};
+
+  --color-primary: #{$color-primary};
+  --color-primary-hover: #{$color-primary-hover};
+  --color-accent: #{$color-accent};
+  --color-error: #{$color-error};
+
+  --color-scene-lake: #{$color-scene-lake};
+  --color-scene-lake-text: #{$color-scene-lake-text};
+  --color-scene-forest: #{$color-scene-forest};
+  --color-scene-forest-text: #{$color-scene-forest-text};
+  --color-scene-kiosk: #{$color-scene-kiosk};
+  --color-scene-kiosk-text: #{$color-scene-kiosk-text};
+
+  // Typographie
+  --font-family-base: #{$font-family-base};
+  --font-weight-regular: #{$font-weight-regular};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-extra-bold: #{$font-weight-extra-bold};
+
+  --font-size-h1: #{$font-size-h1};
+  --line-height-h1: #{$line-height-h1};
+  --font-size-h2: #{$font-size-h2};
+  --line-height-h2: #{$line-height-h2};
+  --font-size-h3: #{$font-size-h3};
+  --line-height-h3: #{$line-height-h3};
+  --font-size-lead: #{$font-size-lead};
+  --line-height-lead: #{$line-height-lead};
+  --font-size-body: #{$font-size-body};
+  --line-height-body: #{$line-height-body};
+  --font-size-small: #{$font-size-small};
+  --line-height-small: #{$line-height-small};
+
+  // Espacements
+  --space-xs: #{$space-xs};
+  --space-s: #{$space-s};
+  --space-m: #{$space-m};
+  --space-l: #{$space-l};
+  --space-xl: #{$space-xl};
+
+  // Rayons
+  --radius-control: #{$radius-control};
+  --radius-card: #{$radius-card};
+  --radius-pill: #{$radius-pill};
+}

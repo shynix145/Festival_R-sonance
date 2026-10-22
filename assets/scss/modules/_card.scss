@@ -1,0 +1,81 @@
+@use "../abstracts/variables" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: $border-width solid $color-border;
+  border-radius: $radius-card;
+  background-color: $color-bg;
+ 
+  &__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: $ratio-card-image;
+    object-fit: cover;
+    border-bottom: $card-accent-height solid $color-border;
+  }
+ 
+  &--lake   &__image { border-bottom-color: $color-scene-lake; }
+  &--forest &__image { border-bottom-color: $color-scene-forest; }
+  &--kiosk  &__image { border-bottom-color: $color-scene-kiosk; }
+ 
+  &__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-xs;
+    padding: $space-m;
+ 
+    @media (min-width: $breakpoint-tablet) {
+      padding: $space-l;
+    }
+  }
+ 
+  &__title {
+    margin: 0;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-h3;
+    line-height: $line-height-h3;
+    color: $color-text;
+  }
+ 
+  &__meta {
+    margin: 0;
+    font-size: $font-size-body;
+    line-height: $line-height-body;
+    color: $color-text-muted;
+  }
+ 
+  &__link {
+    margin-top: auto;
+    padding-top: $space-m;
+    font-size: $font-size-body;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-body;
+    color: $color-primary;
+    text-decoration: none;
+ 
+    &:hover {
+      color: $color-primary-hover;
+      text-decoration: underline;
+    }
+ 
+    &:focus-visible {
+      outline: $focus-width solid $color-text;
+      outline-offset: $focus-offset;
+    }
+  }
+ 
+  &--featured &__image {
+    aspect-ratio: $ratio-card-image-featured;
+  }
+ 
+  &--featured &__title {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-h1;
+    line-height: $line-height-h2;
+    text-transform: uppercase;
+  }
+}

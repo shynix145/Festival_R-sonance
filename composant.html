@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation des composants</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="l-docs-header">
+    <h1 class="l-docs-header__title">Composants</h1>
+    <p class="l-docs-header__intro">
+      Documentation du système de conception et guide des composants du projet.
+    </p>
+  </header>
+
+  <main class="l-docs-main">
+    
+    <!-- 1 à 4. Section Jetons -->
+    <section class="l-docs-section">
+      <h2 class="l-docs-section__title">Jetons</h2>
+      <p class="l-docs-section__intro">
+        Ensemble des valeurs fondamentales (couleurs, typographies, espacements, rayons) utilisées dans le projet.
+      </p>
+
+      <div class="l-docs-row">
+        <h3 class="l-docs-row__label">Couleurs</h3>
+        <div class="l-docs-row__content l-docs-row__content--grid">
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--text-primary"></div><span class="token-color__name">Texte principal</span><span class="token-color__value">#1C1B2E</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--text-normal"></div><span class="token-color__name">Texte courant</span><span class="token-color__value">#3A3950</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--text-secondary"></div><span class="token-color__name">Texte secondaire</span><span class="token-color__value">#6B6A80</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--bg-page"></div><span class="token-color__name">Fond de page</span><span class="token-color__value">#FFFFFF</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--bg-alt"></div><span class="token-color__name">Fond alterné</span><span class="token-color__value">#F4F5F7</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--border"></div><span class="token-color__name">Bordures</span><span class="token-color__value">#E3E5EA</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--border-field"></div><span class="token-color__name">Bordure de champ</span><span class="token-color__value">#CBD0D8</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--primary"></div><span class="token-color__name">Couleur principale</span><span class="token-color__value">#C8402A</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--primary-hover"></div><span class="token-color__name">Principale (survol)</span><span class="token-color__value">#A3311F</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--accent"></div><span class="token-color__name">Accent</span><span class="token-color__value">#F4C95D</span></div>
+          <div class="token-color"><div class="token-color__swatch token-color__swatch--error"></div><span class="token-color__name">Erreur</span><span class="token-color__value">#B3261E</span></div>
+        </div>
+      </div>
+
+      <div class="l-docs-row">
+        <h3 class="l-docs-row__label">Couleurs des scènes</h3>
+        <div class="l-docs-row__content l-docs-row__content--grid">
+          <div class="token-card token-card--lake">
+            <div class="token-card__box"><p class="token-card__title">Scène du Lac</p><span class="token-card__subtitle">Texte posé sur la couleur</span></div>
+            <span class="token-card__meta">Couleur #1F4E8C · texte #FFFFFF</span>
+          </div>
+          <div class="token-card token-card--forest">
+            <div class="token-card__box"><p class="token-card__title">Scène de la Forêt</p><span class="token-card__subtitle">Texte posé sur la couleur</span></div>
+            <span class="token-card__meta">Couleur #2F6B3A · texte #FFFFFF</span>
+          </div>
+          <div class="token-card token-card--kiosk">
+            <div class="token-card__box"><p class="token-card__title">Le Kiosque</p><span class="token-card__subtitle">Texte posé sur la couleur</span></div>
+            <span class="token-card__meta">Couleur #B87A1E · texte #1C1B2E</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-docs-row">
+        <h3 class="l-docs-row__label">Typographie · Inter</h3>
+        <div class="l-docs-row__content l-docs-row__content--stack">
+          <div class="token-typo"><h1 class="token-typo__demo token-typo__demo--main-title">Titre principal</h1><span class="token-typo__meta">56 px · graisse 800 · interligne 64 px</span></div>
+          <div class="token-typo"><h2 class="token-typo__demo token-typo__demo--section-title">Titre de section</h2><span class="token-typo__meta">40 px · graisse 700 · interligne 48 px</span></div>
+          <div class="token-typo"><h3 class="token-typo__demo token-typo__demo--subtitle">Sous-titre</h3><span class="token-typo__meta">28 px · graisse 700 · interligne 36 px</span></div>
+          <div class="token-typo"><p class="token-typo__demo token-typo__demo--intro">Texte d’introduction</p><span class="token-typo__meta">20 px · graisse 400 · interligne 32 px</span></div>
+          <div class="token-typo"><p class="token-typo__demo token-typo__demo--body">Texte courant</p><span class="token-typo__meta">16 px · graisse 400 · interligne 26 px</span></div>
+          <div class="token-typo"><p class="token-typo__demo token-typo__demo--small">Petit texte</p><span class="token-typo__meta">14 px · graisse 400 · interligne 22 px</span></div>
+        </div>
+      </div>
+
+      <div class="l-docs-row l-docs-row--split">
+        <div class="l-docs-col">
+          <h3 class="l-docs-row__label">Espacements</h3>
+          <div class="token-spacings">
+            <div class="token-spacing"><div class="token-spacing__box token-spacing__box--8"></div><span>8 px</span></div>
+            <div class="token-spacing"><div class="token-spacing__box token-spacing__box--16"></div><span>16 px</span></div>
+            <div class="token-spacing"><div class="token-spacing__box token-spacing__box--24"></div><span>24 px</span></div>
+            <div class="token-spacing"><div class="token-spacing__box token-spacing__box--40"></div><span>40 px</span></div>
+            <div class="token-spacing"><div class="token-spacing__box token-spacing__box--64"></div><span>64 px</span></div>
+          </div>
+        </div>
+        <div class="l-docs-col">
+          <h3 class="l-docs-row__label">Rayons</h3>
+          <div class="token-radii">
+            <div class="token-radius"><div class="token-radius__box token-radius__box--6"></div><span>6 px</span></div>
+            <div class="token-radius"><div class="token-radius__box token-radius__box--12"></div><span>12 px</span></div>
+            <div class="token-radius"><div class="token-radius__box token-radius__box--999"></div><span>999 px</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Boutons -->
+    <section class="l-docs-section">
+      <h2 class="l-docs-section__title">Boutons</h2>
+      <div class="l-docs-showcase">
+        <div class="doc-item">
+          <button class="btn btn--primary"><span class="btn__text">Principal</span></button>
+          <span class="doc-item__caption">Principal</span>
+        </div>
+        <div class="doc-item">
+          <button class="btn btn--primary btn--hover"><span class="btn__text">Survol</span></button>
+          <span class="doc-item__caption">Principal, survol</span>
+        </div>
+        <div class="doc-item">
+          <button class="btn btn--secondary"><span class="btn__text">Secondaire</span></button>
+          <span class="doc-item__caption">Secondaire</span>
+        </div>
+        <div class="doc-item">
+          <button class="btn btn--outline"><span class="btn__text">Contour</span></button>
+          <span class="doc-item__caption">Contour</span>
+        </div>
+        <div class="doc-item">
+          <button class="btn btn--primary btn--focus"><span class="btn__text">Focus clavier</span></button>
+          <span class="doc-item__caption">Focus clavier</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Filtres et badges -->
+    <section class="l-docs-section">
+      <h2 class="l-docs-section__title">Filtres et badges</h2>
+      <div class="l-docs-showcase">
+        <div class="doc-item">
+          <button type="button" class="filter">Scène du Lac</button>
+          <span class="doc-item__caption">Par défaut</span>
+        </div>
+        <div class="doc-item">
+          <button type="button" class="filter is-active" aria-pressed="true">Scène du Lac</button>
+          <span class="doc-item__caption">Sélectionné (.is-active)</span>
+        </div>
+        <div class="doc-item">
+          <div class="doc-item__row">
+            <span class="badge badge--lake">Scène du Lac</span>
+            <span class="badge badge--forest">Scène de la Forêt</span>
+            <span class="badge badge--kiosk">Le Kiosque</span>
+          </div>
+          <span class="doc-item__caption">Badges de scène</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Champs de formulaire -->
+    <section class="l-docs-section">
+      <h2 class="l-docs-section__title">Champs de formulaire</h2>
+      <div class="l-docs-fields">
+        <div class="doc-item doc-item--stretch">
+          <div class="field">
+            <label class="field__label" for="champ-nom">Nom</label>
+            <input class="field__input" id="champ-nom" type="text" value="Durand">
+          </div>
+          <span class="doc-item__caption">Par défaut</span>
+        </div>
+        <div class="doc-item doc-item--stretch">
+          <div class="field">
+            <label class="field__label" for="champ-formule">Formule</label>
+            <input class="field__input field__input--focus" id="champ-formule" type="text" value="Pass 3 jours">
+          </div>
+          <span class="doc-item__caption">Focus</span>
+        </div>
+        <div class="doc-item doc-item--stretch">
+          <div class="field field--error">
+            <label class="field__label" for="champ-email">E-mail</label>
+            <input class="field__input" id="champ-email" type="email" value="camille.durand@" aria-invalid="true" aria-describedby="champ-email-erreur">
+            <p class="field__error" id="champ-email-erreur">Erreur : Adresse e-mail invalide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 8. Carte d'artiste -->
+    <section class="l-docs-section">
+      <h2 class="l-docs-section__title">Carte d’artiste</h2>
+      <p class="l-docs-section__intro">
+        Version standard (programme) et version tête d’affiche (accueil).
+      </p>
+
+      <div class="l-docs-cards">
+
+        <!-- Standard -->
+        <article class="card card--lake">
+          <img class="card__image" src="assets/img/scenbe-musicrouge.jpg" alt="Batterie sur une scène éclairée en bleu">
+          <div class="card__body">
+            <span class="badge badge--lake">Scène du Lac</span>
+            <h3 class="card__title">Marée Basse</h3>
+            <p class="card__meta">Rock · Ven. 9 · 20 h 15</p>
+            <a class="card__link" href="#">Voir la fiche <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- Tête d'affiche -->
+        <article class="card card--lake card--featured">
+          <img class="card__image" src="assets/img/scene-musicbleu.jpg" alt="Salle de concert éclairée par des faisceaux rouges">
+          <div class="card__body">
+            <span class="badge badge--lake">Scène du Lac</span>
+            <h3 class="card__title">Lune Rousse</h3>
+            <p class="card__meta">Pop · Ven. 9 · 22 h 30</p>
+            <a class="card__link" href="#">Voir la fiche <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

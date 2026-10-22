@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+.filter {
+  padding: $space-s $space-l;
+  border: $border-width solid $color-border;
+  border-radius: $radius-pill;
+  background-color: $color-bg;
+  font-family: $font-family-base;
+  font-size: $font-size-lead;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-lead;
+  color: $color-text;
+  cursor: pointer;
+  transition: background-color $transition-base, color $transition-base, border-color $transition-base;
+ 
+  &:hover {
+    border-color: $color-text;
+  }
+ 
+  &:focus-visible {
+    outline: $focus-width solid $color-text;
+    outline-offset: $focus-offset;
+  }
+ 
+  &.is-active,
+  &[aria-pressed="true"] {
+    background-color: $color-text;
+    border-color: $color-text;
+    color: $color-bg;
+  }
+}

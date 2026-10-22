@@ -1,0 +1,50 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: $button-height;
+  padding-inline: $space-m;
+  border: $border-width solid transparent;
+  border-radius: $radius-control;
+  font-family: $font-family-base;
+  font-size: $font-size-body;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-body;
+  cursor: pointer;
+  transition: background-color $transition-base, color $transition-base, border-color $transition-base;
+
+  &__text {
+    display: inline-block;
+  }
+
+  &:focus-visible,
+  &--focus {
+    outline: $focus-width solid $color-text;
+    outline-offset: $focus-offset;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-bg;
+
+    &:hover,
+    &.btn--hover {
+      background-color: $color-primary-hover;
+      border-color: $color-text;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-bg-alt;
+    border-color: $color-border-field;
+    color: $color-text;
+  }
+
+  &--outline {
+    background-color: transparent;
+    border-color: $color-primary;
+    color: $color-primary;
+  }
+}

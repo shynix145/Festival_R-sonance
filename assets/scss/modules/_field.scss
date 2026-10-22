@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+ 
+  &__label {
+    font-size: $font-size-body;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-body;
+    color: $color-text;
+  }
+ 
+  &__input {
+    width: 100%;
+    min-height: $button-height;
+    padding: $space-s $space-m;
+    border: $border-width solid $color-border-field;
+    border-radius: $radius-control;
+    background-color: $color-bg;
+    font-family: $font-family-base;
+    font-size: $font-size-body;
+    line-height: $line-height-body;
+    color: $color-text-body;
+    transition: border-color $transition-base, box-shadow $transition-base;
+ 
+    &:focus,
+    &--focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 $field-ring-width $field-ring-color;
+    }
+  }
+ 
+  &__error {
+    margin: 0;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    color: $color-error;
+  }
+ 
+  &--error &__input,
+  &__input[aria-invalid="true"] {
+    border-color: $color-error;
+    box-shadow: 0 0 0 $border-width $color-error;
+  }
+}
