@@ -1,0 +1,124 @@
+// Textes
+
+$color-text:#1C1B2E; // Texte principal
+$color-text-body:#3A3950; // Texte courant
+$color-text-muted:#6B6A80; // Texte secondaire
+
+// Fonds et bordures
+
+$color-bg: #FFFFFF; // Fond de page
+$color-bg-alt: #F4F5F7; // Fond alterné
+$color-border:#E3E5EA; // Bordures
+$color-border-field:#CBD0D8; // Bordure de champ
+
+// Couleurs de marque
+
+$color-primary:         #C8402A; // Couleur principale
+$color-primary-hover:   #A3311F; // Principale (survol)
+$color-accent:          #F4C95D; // Accent
+$color-error:           #B3261E; // Erreur
+
+// Scènes 
+
+$color-scene-lake:#1F4E8C;
+$color-scene-lake-text:     #FFFFFF;
+
+$color-scene-forest:        #2F6B3A;
+$color-scene-forest-text:   #FFFFFF;
+
+$color-scene-kiosk:         #B87A1E;
+$color-scene-kiosk-text:    #1C1B2E;
+
+//2 
+
+$font-family-base: "Inter", sans-serif;
+
+$font-weight-regular:    400;
+$font-weight-bold:       700;
+$font-weight-extra-bold: 800; 
+
+$font-size-h1:      56px; 
+$font-weight-h1:    $font-weight-extra-bold;
+$line-height-h1:    64px;
+
+
+$font-size-h2:      40px; 
+$font-weight-h2:    $font-weight-bold;
+$line-height-h2:    48px;
+
+// Sous-titre
+
+$font-size-h3:      28px; 
+$font-weight-h3:    $font-weight-bold;
+$line-height-h3:    36px;
+
+// Texte d'introduction
+
+$font-size-lead:    20px; 
+$line-height-lead:  32px;
+
+// Texte courant
+
+$font-size-body:    16px; 
+$line-height-body:  26px;
+
+ // Petit texte
+
+$font-size-small:   14px;
+$line-height-small: 22px;
+
+// Tailles complémentaires (légendes et métadonnées)
+
+$font-size-xs:         12px;
+$font-size-caption:    13px;
+$font-size-card-title: 18px;
+
+//3
+
+$space-xs: 8px;
+
+$space-s: 16px;
+$space-m: 24px;
+$space-l: 40px;
+$space-xl: 64px;
+$container-max-width: 1200px;
+
+// Bordures et opacité
+
+$border-width:   1px;
+$opacity-subtle: 0.85;
+
+// Dimensions de la documentation
+
+$docs-label-min-width: 220px;
+$docs-grid-min-width:  140px;
+$swatch-height:        90px;
+$card-min-height:      110px;
+$demo-radius-width:    70px;
+$demo-radius-height:   45px;
+
+// Boutons
+
+$button-height:    48px;
+$focus-width:      2px;
+$focus-offset:     2px;
+$transition-base:  0.2s ease;
+
+//4 
+
+$radius-control: 6px;   
+$radius-card:    12px;
+$radius-pill:    999px; 
+
+
+
+// Mobile 
+$breakpoint-tablet:  768px;  
+$breakpoint-desktop: 1024px; 
+$breakpoint-mobile-lg: 600px;
+
+$field-ring-width:         4px;                         
+$field-ring-color:         rgba($color-primary, 0.3);   
+$field-min-width:          240px;                       
+$card-accent-height:       8px;                              
+$artist-card-min-width:    320px;
