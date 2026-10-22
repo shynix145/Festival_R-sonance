@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+
+.banner {
+  &--hero {
+    background-image: url("../img/pexels-anthonyshkraba-production-8041221.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-block: 120px;
+    color: $color-bg; 
+  }
+
+  &__subtitle {
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    color: $color-accent; 
+    text-transform: uppercase;
+    margin-bottom: $space-s;
+  }
+
+&__title {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-extra-bold;
+    line-height: $line-height-h1;
+    color: $color-bg;
+    margin-bottom: $space-m;
+  }
+
+  &__description {
+    font-size: $font-size-lead;
+    line-height: $line-height-lead;
+    max-width: 600px;
+    margin-bottom: $space-l;
+  }
+
+  &__actions {
+    display: flex;
+    gap: $space-m;
+  }
+}

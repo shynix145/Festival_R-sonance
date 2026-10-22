@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  &__title {
+    font-size: $font-size-lead;
+    font-weight: $font-weight-extra-bold; 
+    color: $color-primary;
+    letter-spacing: 0.5px;
+  }
+
+  &__subtitle {
+    font-size: $font-size-xs;
+    color: $color-text-muted;
+  }
+}

@@ -124,5 +124,5 @@ $card-accent-height:       8px;
 $artist-card-min-width:    320px;
 
 // Dimensions des cartes
-$ratio-card-image:          16 / 9;
-$ratio-card-image-featured: 4 / 3;
+$ratio-card-image:          calc(16 / 9);
+$ratio-card-image-featured: calc(4 / 3);

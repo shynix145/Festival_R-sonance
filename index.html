@@ -3,10 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RÉSONANCES - Festival</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Festival Resonnance</title>
 </head>
-<body>
+<body class="page-home">
+
+  <!-- En-tête / Navigation -->
+  <header class="l-header">
+    <div class="l-header__container l-container">
+      <a href="index.html" class="logo">
+        <span class="logo__title">RÉSONANCES</span>
+        <span class="logo__subtitle">Festival · 9 au 11 juillet 2027</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link is-active">Accueil</a></li>
+          <li class="nav__item"><a href="programme.html" class="nav__link">Programme</a></li>
+          <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+          <li class="nav__item"><a href="infos.html" class="nav__link">Infos pratiques</a></li>
+        </ul>
+      </nav>
+
+      <div class="l-header__actions">
+        <button class="btn btn--secondary" type="button"><span class="btn__text">Mode sombre</span></button>
+        <a href="billetterie.html" class="btn btn--primary"><span class="btn__text">Réserver</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section Hero (Bandeau) -->
+    <section class="banner banner--hero">
+      <div class="l-container">
+        <p class="banner__subtitle">9, 10 ET 11 JUILLET 2027 - LAC DES AULNES</p>
+        <h1 class="banner__title">Trois jours, trois scènes, <br>un lac.</h1>
+        <p class="banner__description">
+          Pop et rock au bord de l'eau, musiques électroniques <br>sous les arbres, jazz au kiosque : quarante artistes à<br> découvrir.
+        </p>
+        <div class="banner__actions">
+          <a href="billetterie.html" class="btn btn--primary"><span class="btn__text">Réserver mon pass</span></a>
+          <a href="programme.html" class="btn btn--outline"><span class="btn__text">Voir le programme</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Présentation / Chiffres clés -->
+    <section class="l-section">
+      <div class="l-container l-about">
+        <div class="l-about__content">
+          <h2 class="l-section__title">Le festival</h2>
+          <p class="l-about__text">
+            Depuis 2015, Depuis 2015, Résonances réunit chaque été les publics de toutes<br> les musiques sur les rives du lac des Aulnes. Une programmation <br>exigeante, des scènes à taille humaine et un site entièrement<br>accessible à pied.
+          </p>
+        </div>
+
+        <div class="l-about__stats">
+          <div class="stat-card">
+            <span class="stat-card__number">40</span>
+            <span class="stat-card__label">artistes</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">3</span>
+            <span class="stat-card__label">scènes</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number">3</span>
+            <span class="stat-card__label">jours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Têtes d'affiche -->
+    <section class="l-section">
+      <div class="l-container">
+        <div class="l-section__header">
+          <h2 class="l-section__title">Têtes d'affiche</h2>
+          <a href="programme.html" class="l-section__link">Tout le programme &rarr;</a>
+        </div>
+
+        <div class="l-grid l-grid--3-cols">
+          <!-- Carte Artiste 1 -->
+          <article class="card card--lake card--featured">
+            <img src="assets/img/scenbe-musicrouge.jpg" alt="Lune Rousse" class="card__image">
+            <div class="card__body">
+              <span class="badge badge--lake">Scène du Lac</span>
+              <h3 class="card__title">LUNE ROUSSE</h3>
+              <p class="card__meta">Pop - Ven. 9 - 22 h 30</p>
+              <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Carte Artiste 2 -->
+          <article class="card card--forest card--featured">
+            <img src="assets/img/scene-musicbleu.jpg" alt="Ostra sur scène" class="card__image">
+            <div class="card__body">
+              <span class="badge badge--forest">Scène de la Forêt</span>
+              <h3 class="card__title">OSTRA</h3>
+              <p class="card__meta">Électro - Sam. 10 - 23 h 45</p>
+              <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <!-- Carte Artiste 3 -->
+          <article class="card card--kiosk card--featured">
+            <img src="assets/img/pexels-jonathan-oliveira-1317356342-27795342.jpg" alt="Trio Sablier avec saxophone" class="card__image">
+            <div class="card__body">
+              <span class="badge badge--kiosk">Le Kiosque</span>
+              <h3 class="card__title--kiosk">TRIO SABLIER</h3>
+              <p class="card__meta">Jazz - Dim. 11 - 19 h 00</p>
+              <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Les Scènes -->
+    <section class="l-section">
+      <div class="l-container">
+        <h2 class="l-section__title">Les scènes</h2>
+
+        <div class="l-grid l-grid--3-cols">
+          <div class="stage-card stage-card--lake">
+            <h3 class="stage-card__title">Scène du Lac</h3>
+            <p class="stage-card__genre">Pop et rock</p>
+            <a href="programme.html" class="stage-card__link">Découvrir la scène &rarr;</a>
+          </div>
+
+          <div class="stage-card stage-card--forest">
+            <h3 class="stage-card__title">Scène de la Forêt</h3>
+            <p class="stage-card__genre">Musiques électroniques</p>
+            <a href="programme.html" class="stage-card__link">Découvrir la scène &rarr;</a>
+          </div>
+
+          <div class="stage-card stage-card--kiosk">
+            <h3 class="stage-card__title">Le Kiosque</h3>
+            <p class="stage-card__genre">Jazz et acoustique</p>
+            <a href="programme.html" class="stage-card__link">Découvrir la scène &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="l-footer">
+    <div class="l-footer__container l-container">
+      <div class="l-footer__brand">
+        <h3 class="l-footer__title">RÉSONANCES</h3>
+        <p class="l-footer__text">
+          Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d'artistes.
+        </p>
+      </div>
+
+      <div class="l-footer__nav">
+        <h4 class="l-footer__heading">Le festival</h4>
+        <ul class="l-footer__list">
+          <li><a href="programme.html" class="l-footer__link">Programme</a></li>
+          <li><a href="billetterie.html" class="l-footer__link">Billetterie</a></li>
+          <li><a href="infos.html" class="l-footer__link">Infos pratiques</a></li>
+        </ul>
+      </div>
+
+      <div class="l-footer__contact">
+        <h4 class="l-footer__heading">Contact</h4>
+        <p class="l-footer__text">contact@resonances-festival.fr</p>
+        <p class="l-footer__text">04 00 00 00 00</p>
+      </div>
+
+      <div class="l-footer__newsletter">
+        <h4 class="l-footer__heading">Newsletter</h4>
+        <form class="newsletter-form">
+          <div class="field">
+            <input type="email" class="field__input" placeholder="Votre e-mail" required>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="l-footer__bottom l-container">
+      <p class="l-footer__copyright">
+        © 2027 Association Résonances - <a href="#">Mentions légales</a> - <a href="#">Accessibilité</a> - <a href="#">Crédits photos</a>
+        <br><a href="composants.html">Bibliothèque de composants</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>

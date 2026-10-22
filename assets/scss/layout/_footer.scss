@@ -1,0 +1,65 @@
+@use "../abstracts/variables" as *;
+
+.l-footer {
+  background-color: $color-text;
+  color: $color-bg;
+  padding-top: $space-xl;
+  margin-top: $space-xl;
+
+  &__container {
+    display: grid;
+    gap: $space-l;
+    padding-bottom: $space-xl;
+
+    @media (min-width: $breakpoint-tablet) {
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__title {
+    font-size: $font-size-lead;
+    font-weight: $font-weight-extra-bold;
+    margin-bottom: $space-s;
+    color: $color-bg;
+  }
+
+  &__heading {
+    font-size: $font-size-body;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-m;
+  }
+
+  &__text, 
+  &__link {
+    color: $color-text-muted;
+    font-size: $font-size-small;
+    line-height: $line-height-body;
+    text-decoration: none;
+    display: block;
+    margin-bottom: $space-xs;
+  }
+
+  &__link:hover {
+    color: $color-bg;
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba($color-bg, 0.1);
+    padding-block: $space-m;
+    text-align: left;
+  }
+
+  &__copyright {
+    color: $color-text-muted;
+    font-size: $font-size-small;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: $color-bg;
+      }
+    }
+  }
+}

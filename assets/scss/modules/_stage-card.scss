@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as *;
+
+.stage-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  min-height: 240px; 
+  padding: $space-l;
+  border-radius: $radius-card;
+  color: $color-bg;
+
+  &--lake { 
+    background-color: $color-scene-lake; 
+  }
+  
+  &--forest { 
+    background-color: $color-scene-forest; 
+  }
+  
+  &--kiosk { 
+    background-color: $color-scene-kiosk; 
+    color: $color-scene-kiosk-text; 
+  }
+  &__title {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-xs;
+    color: $color-bg;
+  }
+
+  &__genre {
+    font-size: $font-size-body;
+    opacity: $opacity-subtle;
+    margin-bottom: $space-m; 
+  }
+
+  &__link {
+    color: inherit;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

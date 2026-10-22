@@ -1,0 +1,68 @@
+@use "../abstracts/variables" as *;
+
+.l-page-header {
+  background-color: $color-bg-alt;
+  padding-block: $space-xl;
+  margin-bottom: $space-l;
+
+  &__breadcrumb {
+    font-size: $font-size-xs;
+    color: $color-text-muted;
+    margin-bottom: $space-s;
+  }
+
+  &__title {
+    font-size: $font-size-h1;
+    font-weight: $font-weight-extra-bold;
+    line-height: $line-height-h1;
+    margin-bottom: $space-s;
+  }
+
+  &__intro {
+    font-size: $font-size-lead;
+    color: $color-text-muted;
+  }
+}
+
+.l-filters-bar {
+  display: flex;
+  flex-direction: column;
+  gap: $space-m;
+  padding-bottom: $space-l;
+  border-bottom: $border-width solid $color-border;
+  margin-bottom: $space-xl;
+
+  &__label,
+  &__count {
+    font-size: $font-size-small;
+    color: $color-text-muted;
+  }
+
+  &__label {
+    font-weight: $font-weight-bold;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-s;
+  }
+}
+.l-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xl;
+
+  &__day {
+    display: flex;
+    flex-direction: column;
+    gap: $space-l;
+  }
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+    padding-bottom: $space-s;
+    border-bottom: $border-width solid $color-border;
+  }
+}

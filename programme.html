@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme - RÉSONANCES Festival</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="page-programme">
+
+  <!-- En-tête / Navigation -->
+  <header class="l-header">
+    <div class="l-header__container l-container">
+      <a href="index.html" class="logo">
+        <span class="logo__title">RÉSONANCES</span>
+        <span class="logo__subtitle">Festival · 9 au 11 juillet 2027</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Accueil</a></li>
+          <li class="nav__item"><a href="programme.html" class="nav__link is-active">Programme</a></li>
+          <li class="nav__item"><a href="billetterie.html" class="nav__link">Billetterie</a></li>
+          <li class="nav__item"><a href="infos.html" class="nav__link">Infos pratiques</a></li>
+        </ul>
+      </nav>
+
+      <div class="l-header__actions">
+        <button class="btn btn--secondary" type="button"><span class="btn__text">Mode sombre</span></button>
+        <a href="billetterie.html" class="btn btn--primary"><span class="btn__text">Réserver</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- En-tête de la page -->
+    <section class="l-page-header">
+      <div class="l-container">
+        <p class="l-page-header__breadcrumb">Accueil / Programme</p>
+        <h1 class="l-page-header__title">Programme</h1>
+        <p class="l-page-header__intro">
+          Quarante concerts sur trois jours. Filtrez par scène pour composer votre parcours.
+        </p>
+      </div>
+    </section>
+
+    <!-- Barre de filtres -->
+    <section class="l-section l-section--filters">
+      <div class="l-container">
+        <div class="l-filters-bar">
+          <span class="l-filters-bar__label">Filtrer par scène</span>
+          
+          <div class="l-filters-bar__group">
+            <button type="button" class="filter is-active" aria-pressed="true">Toutes les scènes</button>
+            <button type="button" class="filter">Scène du Lac</button>
+            <button type="button" class="filter">Scène de la Forêt</button>
+            <button type="button" class="filter">Le Kiosque</button>
+          </div>
+
+          <span class="l-filters-bar__count">12 concerts affichés</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grille du Programme -->
+    <section class="l-section l-schedule">
+      <div class="l-container">
+        
+        <!-- Jour 1 : Vendredi -->
+        <div class="l-schedule__day">
+          <h2 class="l-schedule__title">Vendredi 9 juillet</h2>
+          <div class="l-grid l-grid--3-cols">
+            
+            <article class="card card--kiosk">
+              <img src="assets/img/pexels-jonathan-oliveira-1317356342-27795342.jpg" alt="Clara Ninon Quartet" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--kiosk">Le Kiosque</span>
+                <h3 class="card__title">Clara Ninon Quartet</h3>
+                <p class="card__meta">Jazz Vocal · Ven. 9 · 19 h 30</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="card card--lake">
+              <img src="assets/img/pexels-caleboquendo-34520611.jpg" alt="Marée Basse" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--lake">Scène du Lac</span>
+                <h3 class="card__title">Marée Basse</h3>
+                <p class="card__meta">Rock · Ven. 9 · 20 h 15</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="card card--forest">
+              <img src="assets/img/pexels-anthonyshkraba-production-8041221.jpg" alt="Vertige 808" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--forest">Scène de la Forêt</span>
+                <h3 class="card__title">Vertige 808</h3>
+                <p class="card__meta">Techno · Ven. 9 · 23 h 20</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Jour 2 : Samedi -->
+        <div class="l-schedule__day">
+          <h2 class="l-schedule__title">Samedi 10 juillet</h2>
+          <div class="l-grid l-grid--3-cols">
+            
+            <article class="card card--kiosk">
+              <img src="assets/img/pexels-jonathan-oliveira-1317356342-27795342.jpg" alt="Cordes Sensibles" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--kiosk">Le Kiosque</span>
+                <h3 class="card__title">Cordes Sensibles</h3>
+                <p class="card__meta">Acoustique · Sam. 10 · 17 h 30</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="card card--lake">
+              <img src="assets/img/pexels-caleboquendo-34520611.jpg" alt="Les Hautes Herbes" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--lake">Scène du Lac</span>
+                <h3 class="card__title">Les Hautes Herbes</h3>
+                <p class="card__meta">Folk rock · Sam. 10 · 21 h 00</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="card card--forest">
+              <img src="assets/img/pexels-anthonyshkraba-production-8041221.jpg" alt="Ostra" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--forest">Scène de la Forêt</span>
+                <h3 class="card__title">Ostra</h3>
+                <p class="card__meta">Électro · Sam. 10 · 23 h 45</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Jour 3 : Dimanche -->
+        <div class="l-schedule__day">
+          <h2 class="l-schedule__title">Dimanche 11 juillet</h2>
+          <div class="l-grid l-grid--3-cols">
+            
+            <article class="card card--kiosk">
+              <img src="assets/img/pexels-jonathan-oliveira-1317356342-27795342.jpg" alt="Nuit Blanche Big Band" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--kiosk">Le Kiosque</span>
+                <h3 class="card__title">Nuit Blanche Big Band</h3>
+                <p class="card__meta">Swing · Dim. 11 · 16 h 00</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="card card--forest">
+              <img src="assets/img/pexels-caleboquendo-34520611.jpg" alt="Sylve" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--forest">Scène de la Forêt</span>
+                <h3 class="card__title">Sylve</h3>
+                <p class="card__meta">Ambient · Dim. 11 · 20 h 00</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+            <article class="card card--lake">
+              <img src="assets/img/pexels-anthonyshkraba-production-8041221.jpg" alt="Écho Nord" class="card__image">
+              <div class="card__body">
+                <span class="badge badge--lake">Scène du Lac</span>
+                <h3 class="card__title">Écho Nord</h3>
+                <p class="card__meta">Pop rock · Dim. 11 · 21 h 30</p>
+                <a href="artiste.html" class="card__link">Voir la fiche <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+ <!-- Pied de page -->
+  <footer class="l-footer">
+    <div class="l-footer__container l-container">
+      <div class="l-footer__brand">
+        <h3 class="l-footer__title">RÉSONANCES</h3>
+        <p class="l-footer__text">
+          Festival de musique au bord du lac des Aulnes. Trois jours, trois scènes, une quarantaine d'artistes.
+        </p>
+      </div>
+
+      <div class="l-footer__nav">
+        <h4 class="l-footer__heading">Le festival</h4>
+        <ul class="l-footer__list">
+          <li><a href="programme.html" class="l-footer__link">Programme</a></li>
+          <li><a href="billetterie.html" class="l-footer__link">Billetterie</a></li>
+          <li><a href="infos.html" class="l-footer__link">Infos pratiques</a></li>
+        </ul>
+      </div>
+
+      <div class="l-footer__contact">
+        <h4 class="l-footer__heading">Contact</h4>
+        <p class="l-footer__text">contact@resonances-festival.fr</p>
+        <p class="l-footer__text">04 00 00 00 00</p>
+      </div>
+
+      <div class="l-footer__newsletter">
+        <h4 class="l-footer__heading">Newsletter</h4>
+        <form class="newsletter-form">
+          <div class="field">
+            <input type="email" class="field__input" placeholder="Votre e-mail" required>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="l-footer__bottom l-container">
+      <p class="l-footer__copyright">
+        © 2027 Association Résonances - <a href="#">Mentions légales</a> - <a href="#">Accessibilité</a> - <a href="#">Crédits photos</a>
+        <br><a href="composants.html">Bibliothèque de composants</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

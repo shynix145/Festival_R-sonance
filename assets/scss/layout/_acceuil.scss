@@ -1,0 +1,61 @@
+@use "../abstracts/variables" as *;
+
+.l-section {
+  padding-block: $space-xl;
+
+  &__title {
+    font-size: $font-size-h2;
+    font-weight: $font-weight-bold;
+    margin-bottom: $space-m;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $space-l;
+  }
+
+  &__link {
+    color: $color-primary;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+    
+    &:hover {
+      color: $color-primary-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+.l-about {
+  display: flex;
+  flex-direction: column;
+  gap: $space-l;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__stats {
+    display: flex;
+    gap: $space-m;
+    flex: 1;
+  }
+}
+
+.l-grid {
+  display: grid;
+  gap: $space-l;
+
+  &--3-cols {
+    @media (min-width: $breakpoint-tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
