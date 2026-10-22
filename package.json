@@ -1,0 +1,25 @@
+{
+  "name": "festival-resonnance",
+  "version": "1.0.0",
+  "description": "Site web du Festival Resonance",
+  "keywords": [],
+  "homepage": "https://github.com/shynix145/Festival_R-sonance#readme",
+  "bugs": {
+    "url": "https://github.com/shynix145/Festival_R-sonance/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shynix145/Festival_R-sonance.git"
+  },
+  "license": "ISC",
+  "author": "shynix",
+  "type": "commonjs",
+  "main": "index.js",
+"scripts": {
+    "build:css": "sass assets/scss/main.scss assets/css/style.css --no-source-map",
+    "watch:css": "sass --watch assets/scss/main.scss assets/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.106.1"
+  }
+}
